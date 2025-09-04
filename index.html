@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CODER SSxZICO - Портфолио</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000000;
+      color: #e0e0e0;
+      line-height: 1.6;
+      overflow-x: hidden; /* Чтобы убрать горизонтальный скролл, но оставить вертикальный */
+    }
+
+    .container {
+      max-width: 800px;
+      width: 95%;
+      margin: 50px auto;
+      padding: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 10px 0;
+      font-weight: 600;
+      text-shadow: 0 0 10px #ffd700, 0 0 20px #00ffff;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #ffd700;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ffd700, 0 0 20px #00ffff; }
+      to { text-shadow: 0 0 20px #ffd700, 0 0 40px #00ffff; }
+    }
+
+    section {
+      margin: 30px 0;
+      padding: 20px;
+      background: rgba(18, 20, 33, 0.8);
+      border-radius: 12px;
+      border: 1px solid #00ffff;
+      box-shadow: 0 0 15px #00ffff;
+    }
+
+    a {
+      color: #00ffff;
+      text-decoration: none;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+
+    a:hover {
+      color: #ffd700;
+      text-shadow: 0 0 10px #ffd700;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* Боты */
+    .bot-card {
+      display: block;
+      background: rgba(27, 29, 43, 0.9);
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 12px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: 1px solid #ffd700;
+      color: #e0e0e0;
+    }
+
+    .bot-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px #00ffff, 0 0 50px #ffd700;
+    }
+
+    /* Контакты и хобби */
+    .contact, .hobby {
+      font-size: 1.05em;
+    }
+
+    /* Подзаголовок */
+    .subtitle {
+      text-align: center;
+      font-style: italic;
+    }
+
+    /* Космический фон с анимацией звезд и галактик */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: 
+        url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Ccircle cx="10" cy="20" r="0.5" fill="%23fff"/%3E%3Ccircle cx="30" cy="50" r="0.3" fill="%23fff"/%3E%3Ccircle cx="50" cy="10" r="0.4" fill="%23fff"/%3E%3Ccircle cx="70" cy="80" r="0.6" fill="%23fff"/%3E%3Ccircle cx="90" cy="30" r="0.2" fill="%23fff"/%3E%3C/svg%3E'),
+        radial-gradient(circle at 50% 50%, #0b0d17, #000000);
+      background-size: 200px 200px, cover;
+      animation: stars 20s linear infinite;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    @keyframes stars {
+      0% { background-position: 0 0, center; }
+      100% { background-position: 200px 200px, center; }
+    }
+
+    /* Добавляем неоновый эффект для текста */
+    p, li {
+      text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>CODER SSxZICO</h1>
+    <p class="subtitle">Опытный разработчик Telegram-ботов</p>
+
+    <section>
+      <h2>Навыки</h2>
+      <ul>
+        <li>Языки: <strong>Python</strong>, частично <strong>C++</strong></li>
+        <li>Фреймворки: <strong>aiogram</strong>, <strong>imgui</strong></li>
+        <li>Создание Telegram-ботов с уникальной механикой и визуальными эффектами</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Проекты</h2>
+      
+      <a href="https://t.me/XDukoBot" target="_blank" class="bot-card">
+        <h3>@XDukoBot</h3>
+        <p>Telegram казино с виртуальными деньгами.</p>
+        <p><strong>Роль:</strong> владелец и разработчик, слежу за работой админов.</p>
+      </a>
+
+      <a href="https://t.me/xStarSpinBot" target="_blank" class="bot-card">
+        <h3>@xStarSpinBot</h3>
+        <p>Telegram казино бот с звездами и с различными функциями.</p>
+        <p><strong>Роль:</strong> владелец и разработчик.</p>
+      </a>
+      
+    </section>
+
+    <section>
+      <h2>Опыт работы</h2>
+      <p>Формального опыта работы в компаниях нет, но есть многолетний опыт разработки собственных успешных проектов.</p>
+    </section>
+
+    <section>
+      <h2>Контакты</h2>
+      <p class="contact">Telegram: <a href="https://t.me/xduko">@xduko</a></p>
+    </section>
+
+    <section>
+      <h2>Хобби</h2>
+      <p class="hobby">⚽ Футбол</p>
+      <p class="hobby">🎮 Видео игры</p>
+    </section>
+  </div>
+</body>
+</html>
